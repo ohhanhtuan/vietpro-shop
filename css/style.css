@@ -1,0 +1,255 @@
+body {
+  font-family: arial;
+  font-size: 13px;
+}
+
+/* Thẻ a */
+a {
+  text-decoration: none;
+}
+
+/* Danh mục dùng H3 */
+h3 {
+  font-size: 18px;
+}
+
+/* Sản phẩm dùng H4 */
+h4 {
+  font-size: 13px;
+}
+
+/* Header */
+#header {
+  background: #222;
+}
+
+#logo,
+#search,
+#cart {
+  height: 60px;
+  /* line-height: 60px; */
+}
+
+#search,
+#cart {
+  padding-top: 10px;
+}
+
+#search input {
+  width: 280px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 13px;
+  border-radius: 2px 0 0 2px;
+  padding-left: 12px;
+  border: none;
+}
+
+#search button {
+  height: 30px;
+  font-size: 13px;
+  border: none;
+  border-radius: 0 2px 2px 0;
+  background: #eb1f27;
+  color: #fff;
+}
+
+#cart {
+  text-align: end;
+}
+
+#cart span,
+#cart a {
+  color: #fff;
+  text-transform: capitalize;
+}
+
+#cart a:hover {
+  text-decoration: none;
+}
+
+#cart span {
+  display: inline-block;
+  background: #eb1f27;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 100%;
+}
+/* End Header */
+
+/* Homepage */
+/* Homepage-Menu */
+#homepage {
+  background: #e7ecf4;
+  padding-bottom: 10px;
+}
+
+#menu ul {
+  background: #eb1f27;
+  display: flex;
+  padding: 0;
+}
+
+#menu ul li {
+  list-style: none;
+  height: 40px;
+  line-height: 40px;
+  border-right: 1px solid #c60a11;
+}
+
+#menu a {
+  color: #fff;
+  padding: 0 15px;
+}
+
+#menu a:hover {
+  text-decoration: none;
+}
+/* End Homepage-Menu */
+
+/* Homepage-Main */
+/* Mainleft */
+.products {
+  margin-top: 15px;
+}
+
+.product-list {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+.product-item {
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 10px;
+}
+
+.product-item img {
+  width: 125px;
+  height: 160px;
+  margin-top: 10px;
+}
+
+.product-item h4 {
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+.product-item h4 a {
+  color: #333;
+}
+
+.product-item p {
+  text-transform: capitalize;
+}
+
+.product-item p b {
+  color: #eb1f27;
+}
+/* End Mainleft */
+
+/* Mainright */
+.banner-item {
+  margin-bottom: 10px;
+}
+/* End Maintight */
+/* End Hompage-Main */
+/* End Homepage */
+
+/* Footer-t */
+
+#logo-f,
+#address,
+#services,
+#hotline {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#logo-f p {
+  text-align: justify;
+}
+
+#address h3,
+#services h3,
+#hotline h3 {
+  border-bottom: 1px solid #333;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+/* End Footer-t */
+/* Footer-b */
+#footer-b {
+  background: #1d1e24;
+}
+
+#footer-b p {
+  padding-top: 13.5px;
+  padding-bottom: 13.5px;
+  color: #9baab5;
+  margin: 0;
+}
+/* End Footer-b */
+
+/* Reponsive */
+/* Laptop, PC and Tablet */
+@media (min-width: 768px) {
+  #menu {
+    display: block;
+  }
+}
+/* End Laptop, PC and Tablet */
+/* Tablet */
+@media (max-width: 992px) {
+  #sidebar {
+    display: none;
+  }
+}
+/* End Tablet */
+
+/* Mobile */
+@media (max-width: 768px) {
+  /* Header */
+  #cart {
+    text-align: left;
+  }
+
+  #cart a:hover {
+    text-decoration: underline;
+  }
+  /* End Header */
+
+  /* Homepage */
+  #menu ul {
+    flex-direction: column;
+  }
+
+  #menu ul li {
+    border-bottom: 1px solid #c60a11;
+    border-right: none;
+  }
+
+  #menu ul li:hover {
+    background: #c60a11;
+    cursor: pointer;
+  }
+
+  #menu ul li a:hover {
+    text-decoration: underline;
+  }
+
+  #logo button {
+    background: #fff;
+    float: right;
+    margin-top: 10px;
+  }
+
+  #slider {
+    display: none;
+  }
+}
+/* End Homepage */
+/* End Mobile */
